@@ -9,9 +9,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://userauth-frontend-seven.vercel.app', 'http://localhost:3000']
-    : 'http://localhost:3000',
+  origin: true,
   credentials: true
 }));
 app.use(express.json());
