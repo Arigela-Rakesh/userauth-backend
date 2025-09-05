@@ -10,7 +10,7 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-frontend-url.vercel.app', 'https://your-frontend-url.netlify.app']
+    ? ['https://userauth-frontend-seven.vercel.app', 'http://localhost:3000']
     : 'http://localhost:3000',
   credentials: true
 }));
